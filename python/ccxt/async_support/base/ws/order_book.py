@@ -8,7 +8,7 @@ import sys
 class OrderBook(dict):
     def __init__(self, snapshot={}, depth=None):
         self.cache = []
-        depth = depth or sys.maxsize
+        depth = sys.maxsize
         defaults = {
             'bids': [],
             'asks': [],
